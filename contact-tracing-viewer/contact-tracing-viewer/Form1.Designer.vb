@@ -23,12 +23,12 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.filenameLabel = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.filenameBox = New System.Windows.Forms.TextBox()
+        Me.StudentInfoLabel = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.readTextBox = New System.Windows.Forms.RichTextBox()
+        Me.readBtn = New System.Windows.Forms.Button()
+        Me.clearBtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,72 +42,72 @@ Partial Class Form1
         Me.filenameLabel.TabIndex = 0
         Me.filenameLabel.Text = "Filename:"
         '
-        'TextBox1
+        'filenameBox
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(100, 10)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(116, 23)
-        Me.TextBox1.TabIndex = 1
+        Me.filenameBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.filenameBox.Location = New System.Drawing.Point(100, 10)
+        Me.filenameBox.Name = "filenameBox"
+        Me.filenameBox.Size = New System.Drawing.Size(116, 23)
+        Me.filenameBox.TabIndex = 1
         '
-        'Label1
+        'StudentInfoLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(3, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(171, 24)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Student Information"
+        Me.StudentInfoLabel.AutoSize = True
+        Me.StudentInfoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StudentInfoLabel.Location = New System.Drawing.Point(3, 0)
+        Me.StudentInfoLabel.Name = "StudentInfoLabel"
+        Me.StudentInfoLabel.Size = New System.Drawing.Size(171, 24)
+        Me.StudentInfoLabel.TabIndex = 0
+        Me.StudentInfoLabel.Text = "Student Information"
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.StudentInfoLabel)
         Me.Panel1.Location = New System.Drawing.Point(0, 53)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(181, 31)
         Me.Panel1.TabIndex = 2
         '
-        'RichTextBox1
+        'readTextBox
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(13, 91)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(373, 285)
-        Me.RichTextBox1.TabIndex = 3
-        Me.RichTextBox1.Text = ""
+        Me.readTextBox.Location = New System.Drawing.Point(13, 91)
+        Me.readTextBox.Name = "readTextBox"
+        Me.readTextBox.Size = New System.Drawing.Size(373, 285)
+        Me.readTextBox.TabIndex = 3
+        Me.readTextBox.Text = ""
         '
-        'Button1
+        'readBtn
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(205, 392)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 37)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Read file"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.readBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.readBtn.Location = New System.Drawing.Point(205, 392)
+        Me.readBtn.Name = "readBtn"
+        Me.readBtn.Size = New System.Drawing.Size(80, 37)
+        Me.readBtn.TabIndex = 4
+        Me.readBtn.Text = "Read Text"
+        Me.readBtn.UseVisualStyleBackColor = True
         '
-        'Button2
+        'clearBtn
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(300, 392)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(80, 37)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Clear"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.clearBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.clearBtn.Location = New System.Drawing.Point(300, 392)
+        Me.clearBtn.Name = "clearBtn"
+        Me.clearBtn.Size = New System.Drawing.Size(80, 37)
+        Me.clearBtn.TabIndex = 4
+        Me.clearBtn.Text = "Clear"
+        Me.clearBtn.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(400, 450)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.clearBtn)
+        Me.Controls.Add(Me.readBtn)
+        Me.Controls.Add(Me.readTextBox)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.filenameBox)
         Me.Controls.Add(Me.filenameLabel)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -119,10 +119,10 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents filenameLabel As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents filenameBox As TextBox
+    Friend WithEvents StudentInfoLabel As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents RichTextBox1 As RichTextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents readTextBox As RichTextBox
+    Friend WithEvents readBtn As Button
+    Friend WithEvents clearBtn As Button
 End Class
