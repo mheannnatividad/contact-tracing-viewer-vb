@@ -47,14 +47,15 @@ Partial Class Form1
         Me.filenameBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.filenameBox.Location = New System.Drawing.Point(100, 10)
         Me.filenameBox.Name = "filenameBox"
-        Me.filenameBox.Size = New System.Drawing.Size(116, 23)
+        Me.filenameBox.Size = New System.Drawing.Size(169, 23)
         Me.filenameBox.TabIndex = 1
         '
         'StudentInfoLabel
         '
         Me.StudentInfoLabel.AutoSize = True
+        Me.StudentInfoLabel.BackColor = System.Drawing.SystemColors.Menu
         Me.StudentInfoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StudentInfoLabel.Location = New System.Drawing.Point(3, 0)
+        Me.StudentInfoLabel.Location = New System.Drawing.Point(2, 1)
         Me.StudentInfoLabel.Name = "StudentInfoLabel"
         Me.StudentInfoLabel.Size = New System.Drawing.Size(171, 24)
         Me.StudentInfoLabel.TabIndex = 0
@@ -62,16 +63,17 @@ Partial Class Form1
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.SystemColors.MenuBar
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.StudentInfoLabel)
-        Me.Panel1.Location = New System.Drawing.Point(0, 53)
+        Me.Panel1.Location = New System.Drawing.Point(14, 53)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(181, 31)
         Me.Panel1.TabIndex = 2
         '
         'readTextBox
         '
+        Me.readTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.readTextBox.Location = New System.Drawing.Point(13, 91)
         Me.readTextBox.Name = "readTextBox"
         Me.readTextBox.Size = New System.Drawing.Size(373, 285)
@@ -80,37 +82,42 @@ Partial Class Form1
         '
         'readBtn
         '
+        Me.readBtn.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.readBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.readBtn.Location = New System.Drawing.Point(205, 392)
         Me.readBtn.Name = "readBtn"
         Me.readBtn.Size = New System.Drawing.Size(80, 37)
         Me.readBtn.TabIndex = 4
         Me.readBtn.Text = "Read Text"
-        Me.readBtn.UseVisualStyleBackColor = True
+        Me.readBtn.UseVisualStyleBackColor = False
         '
         'clearBtn
         '
+        Me.clearBtn.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.clearBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clearBtn.Location = New System.Drawing.Point(300, 392)
         Me.clearBtn.Name = "clearBtn"
         Me.clearBtn.Size = New System.Drawing.Size(80, 37)
         Me.clearBtn.TabIndex = 4
         Me.clearBtn.Text = "Clear"
-        Me.clearBtn.UseVisualStyleBackColor = True
+        Me.clearBtn.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(400, 450)
+        Me.BackColor = System.Drawing.SystemColors.Info
+        Me.ClientSize = New System.Drawing.Size(400, 442)
         Me.Controls.Add(Me.clearBtn)
         Me.Controls.Add(Me.readBtn)
         Me.Controls.Add(Me.readTextBox)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.filenameBox)
         Me.Controls.Add(Me.filenameLabel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Contact Tracing Viewer"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
